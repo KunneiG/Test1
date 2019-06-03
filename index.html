@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css" integrity="sha384-PDle/QlgIONtM1aqA2Qemk5gPOE7wFq8+Em+G/hmo5Iq0CCmYZLv3fVRDJ4MMwEA" crossorigin="anonymous">
+</head>
+<body>
+	<div class="container vopros1">
+		<div class="py-3">
+			<h2>Question 1:</h2>
+			<p>Сколько сезонов в сериале "Cверхъестественное?"</p>
+		</div>
+		<div class="border py-3 px-3 otvet1">11</div>
+		<div class="border py-3 px-3 otvet2">14</div>
+		<div class="border py-3 px-3 otvet3">13</div>
+	</div>
+
+	<div class="container vopros2" style="display: none">
+		<div>
+			<h2 class="py-3">Question 2:</h2>
+			<p>Кто главный(ые) герой(и)</p>
+		</div>
+		<div class="border py-3 px-3 otvet4">Дин</div>
+		<div class="border py-3 px-3 otvet5">Сэм</div>
+		<div class="border py-3 px-3 otvet6">Дин и Сэм</div>
+	</div>
+
+	<div class="container vopros3" style="display: none">
+		<div>
+			<h2 class="py-3">Question 3:</h2>
+			<p>Найдите мать Винчестеров</p>
+		</div>
+		<div class="border py-3 px-3 otvet7">
+			<img src="mery.jpg" class="w-50 p-3">
+		</div>
+		<div class="border py-3 px-3 otvet8">
+			<img src="marynot.jpg" class="w-50 p-3">
+		</div>
+		<div class="border py-3 px-3 otvet9">
+			<img src="nootmary.jpg" class="w-50 p-3">
+		</div>
+	</div>
+
+	<div class="container vopros4" style="display: none">
+		<div>
+			<h2 class="py-3">Question 4:</h2>
+			<p>Видео?</p>
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/Nsy06n-omrg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+		<div class="border py-3 px-3 otvet10">
+			<img src="din.gif">
+		</div>
+		<div class="border py-3 px-3 otvet11">2</div>
+		<div class="border py-3 px-3 otvet12">3</div>
+	</div>
+
+	<script type="text/javascript">
+
+		document.querySelector(".otvet1").onclick = function(){
+			alert('Неверно')
+		}
+		document.querySelector(".otvet2").onclick = function(){
+			alert('Верно')
+			document.querySelector(".vopros1").style.display = "none";
+			document.querySelector(".vopros2").style.display = "block"
+		}
+		document.querySelector(".otvet3").onclick = function(){
+			alert('Неверно')
+		}
+
+		document.querySelector(".otvet4").onclick = function(){
+			alert('Неверно')
+		}
+		document.querySelector(".otvet5").onclick = function(){
+			alert('Неверно')	
+		}
+		document.querySelector(".otvet6").onclick = function(){
+			alert('Верно')
+			document.querySelector(".vopros2").style.display = "none";
+			document.querySelector(".vopros3").style.display = "block"
+		}
+
+		document.querySelector(".otvet7").onclick = function(){
+			alert('Верно')
+			document.querySelector(".vopros3").style.display = "none";
+			document.querySelector(".vopros4").style.display = "block"
+		}
+		document.querySelector(".otvet8").onclick = function(){
+			alert('Неверно')	
+		}
+		document.querySelector(".otvet9").onclick = function(){
+			alert('Неверно')
+		}
+	</script>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/js/bootstrap.min.js" integrity="sha384-7aThvCh9TypR7fIc2HV4O/nFMVCBwyIUKL8XCtKE+8xgCgl/PQGuFsvShjr74PBp" crossorigin="anonymous"></script>
+</body>
+</html>
